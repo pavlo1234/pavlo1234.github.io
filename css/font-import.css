@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=cyrillic');
+@font-face {
+    font-family: 'Muller Medium'; 
+    src: url('../fonts/Fontfabric\ -\ MullerMedium.otf'); 
+}
+@font-face {
+    font-family: 'Muller ExtraBold'; 
+    src: url('../fonts/Muller-ExtraBold-DEMO.ttf'); 
+}
