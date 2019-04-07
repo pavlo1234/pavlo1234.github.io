@@ -6,7 +6,7 @@
     background-image: url("../img/header/bg.png");
     background-size: cover;
     min-height: 70vh;
-    padding: 3% 0 2% 0;
+    padding: 3% 1% 2% 1%;
 }
 
 .header__menu {
@@ -67,8 +67,8 @@
     align-items: center;
 }
 .banner__img {
-    width: 60%;
-    height: auto;
+    max-width:80%;
+    height:auto;
     margin: 0 5% 0 -5%;
 }
 .banner__text {
@@ -79,7 +79,7 @@
 }
 .banner__text__up {
     font-family: 'Muller ExtraBold';
-    font-size: 55px;
+    font-size: 60px;
     color: white;
 }
 .banner__text__down {
@@ -94,11 +94,12 @@
 .banner__button-block {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .banner__button {
-    padding: 3% 0;
-    width: 65%;
+    padding: 15px 10px;
+    width: 260px;
     border-radius: 50px;
     background-color: #fb0275;
     font-family: 'Open Sans';
@@ -113,6 +114,7 @@
     font-size: 16px;
     color: white;
     opacity: 0.5;
+    text-align: left;
 }
 
 .header__down-icon {
@@ -121,3 +123,5 @@
     margin: 10% 0 0 48%;
     cursor: pointer;
 }
+
+.media-menu {display:none;}
