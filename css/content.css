@@ -1,0 +1,62 @@
+
+
+
+.content__features {
+    display:flex;
+    flex-direction:column;
+    padding: 10% 1%;
+}
+
+.feature {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature__img-block {
+    width: 100%;
+    margin: 0 5% 0 0;
+}
+
+.feature__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.feature__title {
+    font-family: 'Muller Bold';
+    font-size: 31px;
+    color: #9040dc;
+}
+
+.feature__down-title {
+    font-family: 'Muller Medium';
+    font-size: 32px;
+    line-height: 1.2;
+    color: #383d52;
+    margin: 20px 0;
+}
+
+.feature__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text__parag {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.7;
+    color: rgb(94, 96, 106);
+    word-spacing: 10px;
+    margin: 5px 0;
+}

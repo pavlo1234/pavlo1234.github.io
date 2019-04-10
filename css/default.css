@@ -8,6 +8,7 @@ a {
 button, input {
     background: none;
     border: none;
+    cursor:pointer;
 }
 button:focus, input:focus {
     outline: none;

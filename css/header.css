@@ -47,10 +47,12 @@
     font-weight: 800;
     font-size: 11px;
     color: white;
-    padding: 0.5% 2.7%;
-    border: 2px solid white;
+    padding: 10px 0;
+    width: 165px;
+    border: 0.1vw solid white;
     border-radius: 50px;
     cursor: pointer;
+    word-wrap: normal;
 }
 .media-header__button {
     display: none;
@@ -63,13 +65,17 @@
 .header__banner {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 5% 2% 0 2%;
+}
+.banner__img-block {
+    width: 100%;
+    margin: 0 5% 0 -5%;
 }
 .banner__img {
-    max-width:80%;
+    max-width:100%;
     height:auto;
-    margin: 0 5% 0 -5%;
 }
 .banner__text {
     display: flex;
@@ -94,12 +100,12 @@
 .banner__button-block {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .banner__button {
     padding: 15px 10px;
-    width: 260px;
+    max-width: 100%;
+    min-width: 280px;
     border-radius: 50px;
     background-color: #fb0275;
     font-family: 'Open Sans';

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="media/320/media-content-320.css">
     <link rel="stylesheet" href="media/320/media-footer-320.css">
     <link rel="stylesheet" href="media/320/media-header-320.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <title>Document</title>
@@ -41,7 +42,12 @@
                 <button class="js-button-menu-tab"><i class="material-icons media-header__button">menu</i></button>      
             </div>
             <div class="header__banner">
-                <img src="img/header/icon.png" class="banner__img">
+                <picture class="banner__img-block">
+                    <source srcset="img/header/media-icon-320.png" media="(max-width: 470px)">
+                    <source srcset="img/header/media-icon-750.png" media="(max-width: 900px)">
+                    <source srcset="img/header/icon.png">
+                    <img srcset="img/header/icon.png" class="banner__img">
+                </picture>
                 <div class="banner__text">
                     <h1 class="banner__text__up">РАЗМЕР<br> НЕ ИМЕЕТ<br> ЗНАЧЕНИЯ!</h1>
                     <span class="banner__text__down">Оперативная полиграфия и широкоформатная печать любого размера </span>
@@ -68,6 +74,7 @@
 
     <div class="media-menu">
         <div class="media-menu__block">
+            <button class="js-media-menu__exit media-menu__exit-block"><i class="material-icons media-menu__exit">clear</i></button>
             <div class="media-menu__tabs menu__tabs">
                 <a href="#" class="menu__link media-menu__link">О НАС</a>
                 <a href="#" class="menu__link media-menu__link">УСЛУГИ</a>
@@ -80,6 +87,43 @@
         </div>
     </div>
 
+    <content class="content">
+        <div class="content__features">
+            <div class="wrapper">
+                <div class="feature">
+                    <picture class="feature__img-block">
+                        <source srcset="img/content/features/media-design-320.png" media="(max-width:470px)" class="feature__img">
+                        <source srcset="img/content/features/media-design-750.png" media="(max-width:900px)" class="feature__img">
+                        <source srcset="img/content/features/design.png" class="feature__img">
+                        <img srcset="img/content/features/design.png" class="feature__img">
+                    </picture>
+                    <div class="feature__info">
+                        <h1 class="feature__title">1. О нас</h1>
+                        <h3 class="feature__down-title">Полный спектр услуг — <br>от дизайна до печати</h3>
+                        <span class="feature__text">
+                            <p class="text__parag">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой. </p>
+                            <p class="text__parag">B копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра. </p>
+                            <p class="text__parag">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="feature feature_first">
+                        <picture class="feature__img">
+                            <source>
+                            <source>
+                            <img src="">
+                        </picture>
+                        <div class="feature__info">
+                            <h1 class="feature__title"></h1>
+                            <h3 class="feature__down-title"></h3>
+                            <ul class="feature__text">
+                                <li class="feature__list"></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </content>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
