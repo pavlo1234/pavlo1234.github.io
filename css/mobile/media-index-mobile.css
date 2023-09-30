@@ -24,4 +24,14 @@
         display: none;
     }
 
+    .creators__list {
+        grid-column: 1 / 1;
+        grid-template-columns: auto;
+    }
+
+    .creators__button-block {
+        grid-area: 3 / 1 / 3 / 1;
+        align-items: stretch;
+    }
+
 }

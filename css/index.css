@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 0 40px 0;
+    margin: 40px 0 40px 0;
 }
 
 .collections__title {
@@ -147,5 +147,229 @@
 
 .collection__title {
     font: 600 1.375em 'Work Sans';
+    color: white;
+}
+
+/* Top Creators */
+
+.creators-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto-fit);
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.creators__title {
+    font: 600 2.375em 'Work Sans';
+    color: white;
+    margin: 0 0 15px 0;
+}
+
+.creators__subtext {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+}
+
+.creators__button-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.creators__button {
+    padding: 0 50px;
+}
+
+.creators__list {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+
+.creators__card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    padding: 20px;
+
+    box-sizing: border-box;
+
+}
+
+.creator__number {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    font: 400 1em 'Space Mono';
+    color: #858584;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2B2B;
+    width: 2em;
+    height: 2em;
+    max-width: 30px;
+    max-height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.creator__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0 0 0;
+}
+
+.creator__username {
+    font: 600 1.375em 'Work Sans';
+    color: white; 
+    margin: 0 0 5px 0;
+}
+
+.creator__param {
+    font: 400 1em 'Work Sans';
+    color: #858584;
+}
+
+.creator__value {
+    font: 400 1em 'Work Sans';
+    color: white;
+}
+
+/* Categories */
+
+.categories-banner {
+    padding: 50px 0;
+}
+
+.categories__title {
+    font: 600 2.375em 'Work Sans';
+    color: white;
+}
+
+.categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    margin: 50px 0 0 0;
+}
+
+.banner__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.category__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.category__desc {
+    background: #3B3B3B;
+    padding: 20px 30px 25px 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.category__title {
+    font: 600 1.375em 'Work Sans';
+    color: white;
+}
+
+/* NFTS */
+
+.nfts-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto-fit);
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.nfts__title {
+    font: 600 2.375em 'Work Sans';
+    color: white;
+    margin: 0 0 15px 0;
+}
+
+.nfts__subtext {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+}
+
+.nfts__button-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nfts__button {
+    padding: 0 50px;
+}
+
+.nfts__list {
+    grid-column: 1 / 3;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.banner__nft {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nft__desc {
+    display: flex;
+    flex-direction: column;
+    background: #3B3B3B;
+    padding: 20px 30px 25px 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.nft__title {
+    font: 600 1.375em 'Work Sans';
+    color: white;
+    margin: 0 0 5% 0;
+}
+
+.nft__details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0 0 0;
+}
+
+.nft__detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft__detail__param {
+    font: 400 0.75em 'Space Mono';
+    color: #858584;
+}
+
+.nft__detail__value {
+    font: 400 1em 'Space Mono';
     color: white;
 }

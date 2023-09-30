@@ -20,6 +20,10 @@
         color: white;
     }
 
+    .collections__heading {
+        margin: 0 0 40px 0; 
+    }
+
     .collections__title {
         font-size: 1.75em;
     }
@@ -30,6 +34,43 @@
 
     .banner__collection:nth-child(n+3) {
         display: none;
+    }
+
+    .creators__title {
+        font-size: 1.75em;
+    }
+    
+    .creators__subtext {
+        font-size: 1em;
+    }
+
+    .creators__list {
+        grid-template-columns: auto auto;
+    }
+
+    .creators__card {
+        flex-direction: row;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .creators__card:nth-child(n+7) {
+        display: none;
+    }
+
+    .creator__info {
+        align-items: flex-start;
+        margin: 0 0 0 20px;
+    }
+
+    .creator__number {
+        top: 15%;
+        left: 5%;
+        font-size: 0.8em;
+    }
+
+    .creator__avatar {
+        max-width: 20%;
     }
 
     
