@@ -1,0 +1,37 @@
+@media screen and (max-width: 1024px) {
+
+    .desc__title {
+        font: 600 2.375em 'Work Sans';
+        color: white;
+    }
+    
+    .desc__text {
+        font: 400 1em 'Work Sans';
+        color: white;
+        line-height: 170%;
+    }
+
+    .stat-info__heading {
+        font: 700 1.375em 'Space Mono';
+        color: white;
+    }
+    .stat-info__text {
+        font: 400 1em 'Work Sans';
+        color: white;
+    }
+
+    .collections__title {
+        font-size: 1.75em;
+    }
+
+    .collections__subtitle {
+        font-size: 1em;
+    }
+
+    .banner__collection:nth-child(n+3) {
+        display: none;
+    }
+
+    
+
+}

@@ -1,9 +1,0 @@
-@media screen and (max-width: 470px) {
-
-    .header__banner, .banner__button-block  {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}

@@ -1,133 +1,53 @@
 
-
-
+/* Header */
 
 .header {
-    background-image: url("../img/header/bg.png");
-    background-size: cover;
-    min-height: 70vh;
-    padding: 3% 1% 2% 1%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__icon {
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+}
+
+.logo__text {
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
 }
 
 .header__menu {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 2% 5% 2%;
+    align-items: center;
+    gap: 10px;
 }
-.header__logo {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    color: white;
-    font-size: 18px;
-}
-.menu__tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-}
+
 .menu__link {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-size: 13px;
+    font: 600 1em 'Work Sans';
     color: white;
-    margin: 0 20px;
+    padding: 0 20px;
 }
-.header__number {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    color: white;
-    letter-spacing: 0.05em;
-    font-size: 16px;
+
+.menu__button {
+    padding: 20px 25px;
 }
-.header__button {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    font-size: 11px;
-    color: white;
-    padding: 10px 0;
-    width: 165px;
-    border: 0.1vw solid white;
-    border-radius: 50px;
-    cursor: pointer;
-    word-wrap: normal;
-}
-.media-header__button {
+
+.header__menu-switch {
     display: none;
     cursor: pointer;
-    color: white;
 }
 
-/*      BANNER      */
-
-.header__banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5% 2% 0 2%;
-}
-.banner__img-block {
-    width: 100%;
-    margin: 0 5% 0 -5%;
-}
-.banner__img {
-    max-width:100%;
-    height:auto;
-}
-.banner__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-.banner__text__up {
-    font-family: 'Muller ExtraBold';
-    font-size: 60px;
-    color: white;
-}
-.banner__text__down {
-    font-family: 'Muller Medium';
-    font-size: 32px;
-    color: white;
-    line-height: 110%;
-    letter-spacing: 0.03em;
-    opacity: 0.9;
-    margin: 10% 0;
-}
-.banner__button-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.banner__button {
-    padding: 15px 10px;
-    max-width: 100%;
-    min-width: 280px;
-    border-radius: 50px;
-    background-color: #fb0275;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 14px;
-    color: white;
-    margin: 0 3% 3% 0;
-    cursor: pointer;
-}
-.banner__text-add {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    color: white;
-    opacity: 0.5;
-    text-align: left;
-}
-
-.header__down-icon {
+.menu-switch__icon {
     max-width: 100%;
     height: auto;
-    margin: 10% 0 0 48%;
-    cursor: pointer;
 }
-
-.media-menu {display:none;}

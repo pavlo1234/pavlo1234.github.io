@@ -1,131 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/default.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-import.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="media/750/media-content-750.css">
-    <link rel="stylesheet" href="media/750/media-header-750.css">
-    <link rel="stylesheet" href="media/750/media-header-750.css">
-    <link rel="stylesheet" href="media/320/media-content-320.css">
-    <link rel="stylesheet" href="media/320/media-footer-320.css">
-    <link rel="stylesheet" href="media/320/media-header-320.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <title>Document</title>
-</head>
-<body>
-    
-    <header class="header">
+<html>
+    <head>
+        <title>NFT Marketplace</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/tablet/media-header-tablet.css">
+        <link rel="stylesheet" href="css/mobile/media-header-mobile.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/tablet/media-index-tablet.css">
+        <link rel="stylesheet" href="css/mobile/media-index-mobile.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="img/logo-icon.svg" alt="NFT Marketplace" class="logo__icon">
+                <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
+            </a>
+            <nav class="header__menu">
+                <a href="#" class="menu__link">Marketplace</a>
+                <a href="#" class="menu__link">Rankings</a>
+                <a href="#" class="menu__link">Connect a wallet</a>
+                <a href="#" class="menu__button action-button action-button_filled">
+                    <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
+                    <span class="action-button__text">Sign Up</span>
+                </a>
+            </nav>
+            <button class="header__menu-switch">
+                <img src="img/icons/List.svg" alt="" class="menu-switch__icon">
+            </button>
+        </header>
         <div class="wrapper">
-            <div class="header__menu">
-                <h1 class="header__logo">ATRACTIVE</h1>
-                <div class="menu__tabs">
-                    <a href="#" class="menu__link">О НАС</a>
-                    <a href="#" class="menu__link">УСЛУГИ</a>
-                    <a href="#" class="menu__link">ОТЗЫВЫ</a>
-                    <a href="#" class="menu__link">FAQ</a>
-                    <a href="#" class="menu__link">КОНТАКТЫ</a>
-                    
-                </div>
-                <span class="header__number">+7 (920) 148 81 31</span>
-                <button class="header__button js-button-form">ЗАКАЗАТЬ ЗВОНОК</button>
-                <button class="js-button-menu-tab"><i class="material-icons media-header__button">menu</i></button>      
-            </div>
-            <div class="header__banner">
-                <picture class="banner__img-block">
-                    <source srcset="img/header/media-icon-320.png" media="(max-width: 470px)">
-                    <source srcset="img/header/media-icon-750.png" media="(max-width: 900px)">
-                    <source srcset="img/header/icon.png">
-                    <img srcset="img/header/icon.png" class="banner__img">
-                </picture>
-                <div class="banner__text">
-                    <h1 class="banner__text__up">РАЗМЕР<br> НЕ ИМЕЕТ<br> ЗНАЧЕНИЯ!</h1>
-                    <span class="banner__text__down">Оперативная полиграфия и широкоформатная печать любого размера </span>
-                    <div class="banner__button-block">
-                        <button class="banner__button js-button-form">ЗАКАЗАТЬ ПЕЧАТЬ</button>
-                        <span class="banner__text-add">с доставкой по Ярославлю и Ярославской области</span>
-                    </div>
-                </div>
-            </div>
-            <img src="img/header/down.png" alt="" class="header__down-icon wow bounce">
-        </div>
-    </header>
-
-    <div class="form">
-        <form class="form__block">
-            <img src="img/header/exit.png" alt="" class="block__exit">
-            <span class="block__up-text">Есть вопросы ?</span>
-            <span class="block__down-text">Закажите звонок</span>
-            <input type="text" class="block__input" placeholder="Имя">
-            <input type="text" class="block__input" placeholder="Телефон">
-            <button class="block__button">ОТПРАВИТЬ</button>
-        </form>
-    </div>
-
-    <div class="media-menu">
-        <div class="media-menu__block">
-            <button class="js-media-menu__exit media-menu__exit-block"><i class="material-icons media-menu__exit">clear</i></button>
-            <div class="media-menu__tabs menu__tabs">
-                <a href="#" class="menu__link media-menu__link">О НАС</a>
-                <a href="#" class="menu__link media-menu__link">УСЛУГИ</a>
-                <a href="#" class="menu__link media-menu__link">ОТЗЫВЫ</a>
-                <a href="#" class="menu__link media-menu__link">FAQ</a>
-                <a href="#" class="menu__link media-menu__link">КОНТАКТЫ</a>
-            </div>
-            <span class="media-menu__number header__number">+7 (920) 148 81 31</span>
-            <button class="media-menu__button js-button-form header__button">ЗАКАЗАТЬ ЗВОНОК</button>
-        </div>
-    </div>
-
-    <content class="content">
-        <div class="content__features">
-            <div class="wrapper">
-                <div class="feature">
-                    <picture class="feature__img-block">
-                        <source srcset="img/content/features/media-design-320.png" media="(max-width:470px)" class="feature__img">
-                        <source srcset="img/content/features/media-design-750.png" media="(max-width:900px)" class="feature__img">
-                        <source srcset="img/content/features/design.png" class="feature__img">
-                        <img srcset="img/content/features/design.png" class="feature__img">
-                    </picture>
-                    <div class="feature__info">
-                        <h1 class="feature__title">1. О нас</h1>
-                        <h3 class="feature__down-title">Полный спектр услуг — <br>от дизайна до печати</h3>
-                        <span class="feature__text">
-                            <p class="text__parag">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой. </p>
-                            <p class="text__parag">B копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра. </p>
-                            <p class="text__parag">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
-                        </span>
-                    </div>
-                </div>
-                <div class="feature feature_first">
-                        <picture class="feature__img">
-                            <source>
-                            <source>
-                            <img src="">
-                        </picture>
-                        <div class="feature__info">
-                            <h1 class="feature__title"></h1>
-                            <h3 class="feature__down-title"></h3>
-                            <ul class="feature__text">
-                                <li class="feature__list"></li>
-                            </ul>
+            <div class="banner">
+                <h1 class="desc__title">Discover Digital Art & Collect NFTs</h1>
+                <span class="desc__text">
+                    NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
+                </span>
+                <a href="#" class="banner__item">
+                    <img src="img/banner/nft-image.png" alt="Space Walking" class="item__img">
+                    <div class="item__desc">
+                        <h3 class="item__title">Space Walking</h3>
+                        <div class="item__info usercard">
+                            <img src="img/avatars/avatar1.png" alt="" class="usercard__avatar item__user-avatar">
+                            <span class="item__username usercard__username">Animakid</span>
                         </div>
                     </div>
+                </a>
+                <div class="desc__button-block">
+                    <a href="#" class="desc__button action-button action-button_filled">
+                        <img src="img/icons/RocketLaunch.svg" alt="Get Started" class="menu__button__icon action-button__icon">
+                        <span class="action-button__text">Get Started</span>
+                    </a>
+                </div>
+                <div class="desc__stat-info">
+                    <div class="stat-info__block">
+                        <span class="stat-info__heading h4_space-mono">240k+</span>
+                        <span class="stat-info__text">Total Sale</span>
+                    </div>
+                    <div class="stat-info__block">
+                        <span class="stat-info__heading  h4_space-mono">100k+</span>
+                        <span class="stat-info__text">Auctions</span>
+                    </div>
+                    <div class="stat-info__block">
+                        <span class="stat-info__heading  h4_space-mono">240k+</span>
+                        <span class="stat-info__text">Artists</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </content>
+            
+            <div class="collections-banner">
+                <div class="collections__heading">
+                    <h1 class="collections__title">Trending Collection</h1>
+                    <h3 class="collections__subtitle">Checkout Our Weekly Updated Trending Collection.</h3>
+                </div>
+                <div class="collections__list">
+                    <div class="banner__collection">
+                        <div class="collection__images">
+                            <a href="" class="collection__img-link collection__img-link_first">
+                                <img src="img/collections/collection1_1.png" alt="" class="collection__img collection__img_first">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection1_2.png" alt="" class="collection__img">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection1_3.png" alt="" class="collection__img">
+                            </a>
+                            <a href="#" class="collection__link  action-button action-button_filled">
+                                <span class="collection__link-text">1025+</span>
+                            </a>
+                        </div>
+                        <div class="collection__desc">
+                            <h2 class="collection__title">DSGN Animals</h2>
+                            <div class="collection__author usercard">
+                                <a href="#" class="collection__author-link usercard__user-link">
+                                    <img src="img/avatars/avatar2.png" alt="" class="collection__user-avatar">
+                                </a>
+                                <span class="collection__username usercard__username">MrFox</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__collection">
+                        <div class="collection__images">
+                            <a href="" class="collection__img-link collection__img-link_first">
+                                <img src="img/collections/collection2_1.png" alt="" class="collection__img collection__img_first">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection2_2.png" alt="" class="collection__img">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection2_3.png" alt="" class="collection__img">
+                            </a>
+                            <a href="#" class="collection__link action-button action-button_filled">
+                                <span class="collection__link-text">1025+</span>
+                            </a>
+                        </div>
+                        <div class="collection__desc">
+                            <h2 class="collection__title">Magic Mushrooms</h2>
+                            <div class="collection__author usercard">
+                                <a href="#" class="collection__author-link usercard__user-link">
+                                    <img src="img/avatars/avatar3.png" alt="" class="collection__user-avatar">
+                                </a>
+                                <span class="collection__username usercard__username">Shroomie</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__collection">
+                        <div class="collection__images">
+                            <a href="" class="collection__img-link collection__img-link_first">
+                                <img src="img/collections/collection3_1.png" alt="" class="collection__img collection__img_first">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection3_2.png" alt="" class="collection__img">
+                            </a>
+                            <a href="" class="collection__img-link">
+                                <img src="img/collections/collection3_3.png" alt="" class="collection__img">
+                            </a>
+                            <a href="#" class="collection__link  action-button action-button_filled">
+                                <span class="collection__link-text">1025+</span>
+                            </a>
+                        </div>
+                        <div class="collection__desc">
+                            <h2 class="collection__title">Disco Machines</h2>
+                            <div class="collection__author usercard">
+                                <a href="#" class="collection__author-link usercard__user-link">
+                                    <img src="img/avatars/avatar4.png" alt="" class="collection__user-avatar">
+                                </a>
+                                <span class="collection__username usercard__username">BeKind2Robots</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        </div>
+    </body>
 </html>
