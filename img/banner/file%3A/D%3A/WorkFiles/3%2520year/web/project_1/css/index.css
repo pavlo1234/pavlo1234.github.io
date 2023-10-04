@@ -20,11 +20,25 @@
 }
 
 .desc__button {
-    padding: 20px 50px;
+    padding: 0 50px;
 }
 
 .desc__stat-info {
-    margin: 20px 0 0 0;
+    display: flex;
+    gap: 13%;
+}
+.stat-info__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stat-info__heading {
+    font: 700 1.75em 'Space Mono';
+    color: white;
+}
+.stat-info__text {
+    font: 400 1.5em 'Work Sans';
+    color: white;
 }
 
 .banner__item {
@@ -140,6 +154,7 @@
 
 .creators-banner {
     display: grid;
+    grid-template-columns: repeat(auto-fill, auto-fit);
     gap: 30px;
     padding: 40px 0;
 }
@@ -163,7 +178,7 @@
 }
 
 .creators__button {
-    padding: 20px 50px;
+    padding: 0 50px;
 }
 
 .creators__list {
@@ -277,6 +292,7 @@
 
 .nfts-banner {
     display: grid;
+    grid-template-columns: auto;
     gap: 30px;
     padding: 40px 0;
 }
@@ -300,7 +316,7 @@
 }
 
 .nfts__button {
-    padding: 20px 50px;
+    padding: 0 50px;
 }
 
 .nfts__list {
@@ -308,173 +324,50 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-}
-
-/* NFT Advert */
-
-.nft-advert-banner {
-    padding: 40vh 0 50px 0;
-    background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url("../img/nft-background.png");
-    background-position: top center;
-    background-size: cover;
-}
-
-.nft-advert__content {
-    display: grid;
-    row-gap: 30px;
-}
-
-.nft-advert__author {
-    border-radius: 50px;
-    width: fit-content;
-    padding: 10px 25px;
-    background: #3B3B3B;
-}
-
-.nft-advert__ntf-title {
-    font: 600 3.1875em 'Work Sans';
-    color: white;
-    grid-area: 2 / 1 / 3 / 1;
-}
-
-.nft-advert__button-block {
-    grid-area: 3 / 1 / 4 / 1;
-}
-
-.nft-advert__button {
-    background: white;
-    padding: 20px 50px;
-}
-
-.nft-advert__button__text {
-    color: black;
-}
-
-.nft-advert__timer-block {
-    grid-area: 2 / 2 / 4 / 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-
-/* Tips Block */
-
-.tips-banner {
-    padding: 50px 0;
-}
-
-.tips__title {
-    font: 600 2.375em 'Work Sans';
-    color: white;
-    margin: 0 0 15px 0;
-}
-
-.tips__subtext {
-    font: 400 1.375em 'Work Sans';
-    color: white;
-}
-
-.tips__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 60px 0 0 0;
-}
-
-.banner__tip {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 1 33.3%;
     gap: 10px;
-    padding: 10px 20px 30px;
-    border-radius: 20px;
-    background-color: #3B3B3B;
 }
 
-.tip__image {
+.banner__nft {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft__img {
     max-width: 100%;
     height: auto;
 }
 
-.tip__desc {
+.nft__desc {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    background: #3B3B3B;
+    padding: 20px 30px 25px 30px;
+    border-radius: 0 0 20px 20px;
 }
 
-.tip__title {
+.nft__title {
     font: 600 1.375em 'Work Sans';
     color: white;
+    margin: 0 0 5% 0;
 }
 
-.tip__text {
-    font: 400 1em 'Work Sans';
-    color: white;
-    line-height: 150%;
-}
-
-/* Widget */
-
-.widget-banner {
-    padding: 50px 0;
-}
-
-.widget__block {
-    padding: 50px;
+.nft__details {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: #3B3B3B;
+    justify-content: space-between;
+    margin: 10% 0 0 0;
 }
 
-.widget__img {
-    width: 50%;
-}
-
-.widget__content {
+.nft__detail {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
-.widget__title {
-    font: 600 2.375em 'Work Sans';
+
+.nft__detail__param {
+    font: 400 0.75em 'Space Mono';
+    color: #858584;
+}
+
+.nft__detail__value {
+    font: 400 1em 'Space Mono';
     color: white;
-}
-
-.widget__text {
-    font: 400 1.375em 'Work Sans';
-    color: white;
-    line-height: 160%;
-}
-
-.widget__subsc-form {
-    margin: 20px 0 0 0;
-}
-
-.subsc-form {
-    display: flex;
-}
-
-.subsc-form__input {
-    padding: 16px 49% 16px 16px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: white;
-    font: 400 1em 'Work Sans';
-    color: #2B2B2B;
-    box-sizing: border-box;
-}
-
-.subsc-form__button {
-    width: 48%;
-    padding: 20px 50px;
-    margin-left: -48%;
-    font: 600 1em 'Work Sans';
 }

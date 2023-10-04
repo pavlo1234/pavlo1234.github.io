@@ -1,0 +1,155 @@
+
+/* NFT info */
+
+.nft-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.nft-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 10px;
+}
+
+.nft-info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nft-info__nft-name {
+    font: 600 3.1875em 'Work Sans';
+    color: white;
+}
+
+.nft-info__minting-date {
+    font: 400 1.375em 'Work Sans';
+    color: #858584;
+}
+
+.nft-info__title {
+    font: 700 1.375em 'Space Mono';
+    color: #858584;
+}
+
+.nft-info__text {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+    line-height: 35.2px;
+}
+
+.nft-info__artist-name {
+    font: 600 1.375em 'Work Sans';
+}
+
+.nft-info__links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nft-info__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nft-info__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nft-info__tag {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #3b3b3b;
+    font: 600 1em 'Work Sans';
+    color: white;
+    text-align: center;
+}
+
+.nft-info__timer-block {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-info__timer {
+    background: #3b3b3b;
+}
+
+/* Artist works grid list */
+
+.works-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 10px;
+}
+
+.works-info__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.works-info__heading__title {
+    font: 600 2.375em 'Work Sans';
+    color: white;
+}
+
+.works-info__heading__button {
+    padding: 20px 30px;
+}
+
+.works-info__works-list {
+    row-gap: 60px;
+    column-gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nft-info__nft-name {
+        font-size: 2.375em;
+    }
+    
+    .nft-info__minting-date {
+        font-size: 1em;
+    }
+
+    .nft-info__title {
+        font-size: 1em;
+    }
+
+    .nft-info__text {
+        font-size: 1em;
+    }
+
+    .nft-info__tag {
+        font-size: 1em;
+    }
+
+    .works-info__heading__title {
+        font-size: 1.75em;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .works-info__heading__button {
+        display: none;
+    }
+
+    .nft-info__timer-block {
+        position: static;
+    }
+
+}

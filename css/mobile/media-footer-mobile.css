@@ -1,0 +1,16 @@
+@media screen and (max-width: 475px) {
+    .footer__subsc-form {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .footer__subsc-form__input {
+        padding: 16px;
+    }
+    
+    .footer__subsc-form__button {
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -73,6 +73,48 @@
         max-width: 20%;
     }
 
+    .categories__title {
+        font-size: 1.75em;
+    }
+
+    .nfts__title {
+        font-size: 1.75em;
+    }
+    
+    .nfts__subtext {
+        font-size: 1em;
+    }
+
+    .tip__title {
+        font-size: 1em;
+    }
+
+    .tip__text {
+        font-size: 0.75em;
+    }
+
+    .widget__title {
+        font-size: 1.75em;
+    }
+    
+    .widget__text {
+        font-size: 1em;
+    }
+
+    .subsc-form {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .subsc-form__input {
+        padding: 16px;
+    }
+    
+    .subsc-form__button {
+        width: 100%;
+        margin-left: 0;
+    }
     
 
 }

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tablet/media-header-tablet.css">
+    <link rel="stylesheet" href="css/mobile/media-header-mobile.css">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tablet/media-footer-tablet.css">
+    <link rel="stylesheet" href="css/mobile/media-footer-mobile.css">
+    <title>Artist</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header__logo logo">
+            <img src="img/logo-icon.svg" alt="NFT Marketplace" class="logo__icon">
+            <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
+        </a>
+        <nav class="header__menu">
+            <a href="marketplace.html" class="menu__link">Marketplace</a>
+            <a href="rankings.html" class="menu__link">Rankings</a>
+            <a href="wallet-connect.html" class="menu__link">Connect a wallet</a>
+            <a href="sign-up.html" class="menu__button action-button action-button_filled">
+                <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
+                <span class="action-button__text">Sign Up</span>
+            </a>
+        </nav>
+        <button class="header__menu-switch">
+            <img src="img/icons/List.svg" alt="" class="menu-switch__icon">
+        </button>
+    </header>
+
+    <div class="profile-banner">
+        <img src="img/user-profile-bkgnd.png" alt="" class="profile__img">
+        <div class="profile__info container">
+            <div class="profile__info-item">
+                <img src="img/user-avatar.png" alt="" class="profile__user-avatar">
+            </div>
+            <div class="profile__info-item">
+                <h1 class="profile__username">Animakid</h1>
+                <div class="profile__buttons">
+                    <button class="profile__button action-button action-button_filled">
+                        <img src="img/icons/Copy.svg" alt="" class="profile__button__icon action-button__icon">
+                        <span class="profile__button__text action-button__text">0xc0E3...B79C</span>
+                    </button>
+                    <button class="profile__button action-button">
+                        <img src="img/icons/PlusPurple.svg" alt="" class="profile__button__icon action-button__icon">
+                        <span class="profile__button__text action-button__text">Follow</span>
+                    </button>
+                </div>
+            </div>
+            <div class="profile__info-item">
+                <div class="profile__stat-info stat-info">
+                    <div class="profile__stat-info__block stat-info__block">
+                        <span class="profile__stat-info__heading stat-info__heading">250k+</span>
+                        <span class="profile__stat-info__text stat-info__text">Volume</span>
+                    </div>
+                    <div class="profile__stat-info__block stat-info__block">
+                        <span class="profile__stat-info__heading stat-info__heading">50k+</span>
+                        <span class="profile__stat-info__text stat-info__text">NFTs Sold</span>
+                    </div>
+                    <div class="profile__stat-info__block stat-info__block">
+                        <span class="profile__stat-info__heading stat-info__heading">3000k+</span>
+                        <span class="profile__stat-info__text stat-info__text">Followers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__info-item">
+                <div class="profile__info__block">
+                    <h1 class="profile__block__title">Bio</h1>
+                    <span class="profile__block__text">The Internet's Friendliest Designer Kid.</span>
+                </div>
+            </div>
+            <div class="profile__info-item">
+                <div class="profile__info__block">
+                    <h1 class="profile__block__title">Links</h1>
+                    <div class="profile__links">
+                        <a href="#" class="profile__link">
+                            <img src="img/icons/GlobeGray.svg" alt="" class="profile__link__icon">
+                        </a>
+                        <a href="#" class="profile__link">
+                            <img src="img/icons/DiscordLogo.svg" alt="" class="profile__link__icon">
+                        </a>
+                        <a href="#" class="profile__link">
+                            <img src="img/icons/YoutubeLogo.svg" alt="" class="profile__link__icon">
+                        </a>
+                        <a href="#" class="profile__link">
+                            <img src="img/icons/TwitterLogo.svg" alt="" class="profile__link__icon">
+                        </a>
+                        <a href="#" class="profile__link">
+                            <img src="img/icons/InstagramLogo.svg" alt="" class="profile__link__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tags tabs container">
+        <button class="tag tab tab_active type_active">
+            <h2 class="type__title tab__title">Created</h2>
+            <div class="tag__count tab__number">302</div>
+        </button>
+        <button class="tag tab">
+            <h2 class="tag__title tab__title">Owned</h2>
+            <div class="tag__count tab__number">67</div>
+        </button>
+        <button class="tag tab">
+            <h2 class="tag__title tab__title">Collection</h2>
+            <div class="tag__count tab__number">4</div>
+        </button>
+    </div>
+    
+    <div class="works-banner">
+        <div class="works__list grid-list container">
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="nft.html" class="works__item nft-card">
+                <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                <div class="nft__desc">
+                    <h3 class="nft__title">AstroFiction</h3>
+                    <div class="nft__autor usercard">
+                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                        <span class="nft__author-name usercard__username">Spaceone</span>
+                    </div>
+                    <div class="nft__details">
+                        <div class="nft__detail nft__detail_first">
+                            <span class="nft__detail__param">Price</span>
+                            <span class="nft__detail__value">1.63 ETH</span>
+                        </div>
+                        <div class="nft__detail nft__detail_last">
+                            <span class="nft__detail__param">Highest Bid</span>
+                            <span class="nft__detail__value">0.33 wETH</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__blocks">
+                <div class="footer__block">
+                    <div class="footer__block__heading">
+                        <a href="index.html" class="logo footer__logo">
+                            <img src="img/logo-icon.svg" alt="NFT Marketplace" class="footer__logo__icon logo__icon">
+                            <img src="img/logo-text.svg" alt="NFT Marketplace" class="footer__logo__text logo__text">
+                        </a>
+                    </div>
+                    <div class="footer__block__content">
+                        <span class="footer__text">
+                            NFT marketplace UI created with Anima for Figma.
+                        </span>
+                        <div class="footer__block__links">
+                            <span class="footer__text">Join our community</span>
+                            <div class="footer__list">
+                                <a href="#" class="footer__block__link">
+                                    <img src="img/icons/DiscordLogo.svg" alt="" class="footer__block__link-icon">
+                                </a>
+                                <a href="#" class="footer__block__link">
+                                    <img src="img/icons/YoutubeLogo.svg" alt="" class="footer__block__link-icon">
+                                </a>
+                                <a href="#" class="footer__block__link">
+                                    <img src="img/icons/TwitterLogo.svg" alt="" class="footer__block__link-icon">
+                                </a>
+                                <a href="#" class="footer__block__link">
+                                    <img src="img/icons/InstagramLogo.svg" alt="" class="footer__block__link-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__block__heading">
+                        <h2 class="footer__block__title">Explore</h2>
+                    </div>
+                    <div class="footer__block__content">
+                        <a href="marketplace.html" class="footer__text">Marketplace</a>
+                        <a href="rankings.html" class="footer__text">Rankings</a>
+                        <a href="wallet-connect.html" class="footer__text">Connect a wallet</a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__block__heading">
+                        <h2 class="footer__block__title">Join our weekly digest</h2>
+                    </div>
+                    <div class="footer__block__content">
+                        <span class="footer__text">Get exclusive promotions & updates straight to your inbox.</span>
+                        <form action="" class="footer__subsc-form">
+                            <input placeholder="Enter your email here" type="email" class="footer__subsc-form__input"/>
+                            <button class="footer__subsc-form__button footer__subsc-form__button action-button action-button_filled">
+                                <img src="img/icons/EnvelopeSimple.svg" alt="" class="form__button__icon action-button__icon">
+                                <span class="action-button__text form__button__text">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__underline">
+                <span class="footer__text footer__text_underline">Ⓒ NFT Market. Use this template freely.</span>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

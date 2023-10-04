@@ -1,0 +1,177 @@
+.banner {
+    padding: 80px 10px;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner__title {
+    font: 600 3.1875em 'Work Sans';
+    color: white;
+}
+
+.banner__subtitle {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+}
+
+/* Filter tabs */
+
+.filters {
+    padding: 0 10px;
+}
+
+.filter__title {
+    font-size: 1.375em;
+}
+
+/* Ranking table */
+
+.ranking-table {
+    width: 100%;
+    border-spacing: 0 20px;
+    padding: 30px 10px;
+}
+
+
+.ranking-table__heading {
+    font: 400 1em 'Space Mono';
+    color: #858584;
+    text-align: left;
+    padding: 10px 10px 10px 0;
+    border-top: 1px solid #3b3b3b;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.ranking-table__heading:nth-child(1) {
+    border: 1px solid #3b3b3b;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+}
+
+.ranking-table__heading:nth-child(5) {
+    border: 1px solid #3b3b3b;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    padding-right: 20px;
+}
+
+.ranking-table__item {
+    background: #3b3b3b;
+}
+
+.ranking-table__item__value {
+    padding: 10px 0;
+}
+
+.ranking-table__item .ranking-table__item__value:nth-child(1) {
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+}
+
+.ranking-table__item .ranking-table__item__value:nth-child(5) {
+    border-radius: 0 20px 20px 0;
+    padding-right: 20px;
+}
+
+.ranking-table__item__number {
+    font: 400 1em 'Space Mono';
+    color: #858584;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2B2B;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;   
+}
+
+.ranking-table__item__user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ranking-table__item__user-avatar {
+    max-width: 100%;
+    height: auto;
+}
+
+.ranking-table__item__username {
+    font: 600 1.375em 'Work Sans';
+    color: white;
+}
+
+.ranking-table__item__change-value {
+    font: 400 1em 'Space Mono';
+    color: #00AC4F;
+}
+
+.ranking-table__item__sold-value, .ranking-table__item__volume-value {
+    font: 400 1em 'Space Mono';
+    color: white
+}
+
+@media screen and (max-width: 1024px) {
+    .banner__title {
+        font-size: 2.375em;
+    }
+    
+    .banner__subtitle {
+        font-size: 1em;
+    }
+
+    .filter__title {
+        font-size: 1em;
+    }
+
+    .ranking-table__item__user-avatar {
+        max-width: 30%;
+    }
+
+    .ranking-table__item__number {
+        background: none;
+        width:fit-content;
+        height: fit-content;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .ranking-table__heading_change, .ranking-table__item__value_change {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .banner__title {
+        font-size: 1.375em;
+    }
+
+    .ranking-table__item__user-avatar {
+        max-width: 10%;
+    }
+
+    .ranking-table__item__username {
+        font-size: 1em;
+    }
+
+    .ranking-table__item__volume-value {
+        font-size: 0.75em;
+    }
+
+    .ranking-table__heading_sold, .ranking-table__item__value_sold {
+        display: none;
+    }
+    
+}

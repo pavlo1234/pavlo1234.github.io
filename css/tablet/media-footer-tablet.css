@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    .footer__blocks {
+        flex-direction: column;
+        padding-bottom: 50px;
+        align-items: stretch;
+    }
+
+}

@@ -1,0 +1,66 @@
+.banner {
+    padding: 80px 0;
+    border-bottom: 1px solid #3B3B3B;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner__title {
+    font: 600 3.1875em 'Work Sans';
+    color: white;
+}
+
+.banner__subtitle {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+}
+
+.banner__search-block {
+    display: flex;
+    gap: 10px;
+    padding: 12px 20px;
+    margin: 30px 0 0 0;
+    border-radius: 20px;
+    border: 1px solid #3B3B3B;
+}
+
+.search-block__input {
+    width: 100%;
+    font: 400 1em 'Work Sans';
+    color: #858584;
+}
+
+.search-block__input__icon {
+    max-width: 100%;
+    height: auto;
+}
+
+.categories {
+    margin-top: 10px;
+}
+
+.marketplace {
+    padding: 60px 0 80px 0;
+    background-color: #3B3B3B;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.marketplace__item .nft__desc {
+    background: #2b2b2b;
+}
+
+@media screen and (max-width: 425px) {
+    .category__count {
+        display: none;
+    }
+    
+}

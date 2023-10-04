@@ -1,0 +1,100 @@
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner__img {
+    width: 55%;
+    max-height: 88vh;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 50px;
+}
+
+.banner__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner__title {
+    font: 600 3.1875em 'Work Sans';
+    color: white;
+}
+
+.banner__subtext {
+    font: 400 1.375em 'Work Sans';
+    color: white;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    gap: 15px;
+}
+
+.reg-form__input-block {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.reg-form__input-icon {
+    max-width: 100%;
+    height: auto;
+}
+
+.reg-form__input {
+    font: 400 1em 'Work Sans';
+    color: #2B2B2B;
+}
+
+.reg-form__button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin: 20px 0 0 0;
+    font-size: 1em;
+}
+
+.banner__reg-form {
+    margin: 40px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner__title {
+        font-size: 2.375em;
+    }
+    
+    .banner__subtext {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner__img {
+        width: 100%;
+    }
+
+    .banner__content {
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    .banner__reg-form {
+        max-width: 100%;
+    }
+
+}

@@ -7,24 +7,6 @@
     padding: 20px 50px;
 }
 
-.header__logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo__icon {
-    display: inline-block;
-    max-width: 80%;
-    height: auto;
-}
-
-.logo__text {
-    display: inline-block;
-    max-width: 80%;
-    height: auto;
-}
-
 .header__menu {
     display: flex;
     justify-content: space-between;
