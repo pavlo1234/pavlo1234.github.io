@@ -5,4 +5,25 @@
         align-items: stretch;
     }
 
+    .footer__subsc-form {
+        flex-direction: row;
+    }
+
+    .footer__subsc-form__input {
+        padding: 16px 49% 16px 16px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+        font: 400 1em 'Work Sans';
+        color: #2B2B2B;
+        box-sizing: border-box;
+    }
+    
+    .footer__subsc-form__button {
+        width: 48%;
+        padding: 16px 50px;
+        margin-left: -48%;
+        font: 600 1em 'Work Sans';
+    }
+
 }

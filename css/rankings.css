@@ -136,7 +136,7 @@
     }
 
     .ranking-table__item__user-avatar {
-        max-width: 30%;
+        max-width: 10%;
     }
 
     .ranking-table__item__number {
@@ -147,7 +147,8 @@
         border-radius: 0;
     }
 
-    .ranking-table__heading_change, .ranking-table__item__value_change {
+    
+    .ranking-table__heading_sold, .ranking-table__item__value_sold {
         display: none;
     }
 
@@ -158,8 +159,8 @@
         font-size: 1.375em;
     }
 
-    .ranking-table__item__user-avatar {
-        max-width: 10%;
+    .ranking-table__heading {
+        font-size: 0.75em;
     }
 
     .ranking-table__item__username {
@@ -170,8 +171,8 @@
         font-size: 0.75em;
     }
 
-    .ranking-table__heading_sold, .ranking-table__item__value_sold {
+    .ranking-table__heading_change, .ranking-table__item__value_change {
         display: none;
     }
-    
+
 }

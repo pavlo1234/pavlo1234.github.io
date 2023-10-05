@@ -5,7 +5,7 @@
     display: grid;
     justify-content: space-between;
     gap: 20px 30px;
-    padding: 50px 0;
+    padding: 80px 10px;
 }
 
 .desc__title {
@@ -21,10 +21,7 @@
 
 .desc__button {
     padding: 20px 50px;
-}
-
-.desc__stat-info {
-    margin: 20px 0 0 0;
+    margin: 10px 0;
 }
 
 .banner__item {
@@ -55,14 +52,13 @@
 /* Collections */
 
 .collections-banner {
-    padding: 50px 0;
+    padding: 80px 10px;
 }
 
 .collections__heading {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 40px 0 40px 0;
 }
 
 .collections__title {
@@ -80,6 +76,7 @@
     justify-content: space-between;
     gap: 30px;
     flex-wrap: nowrap;
+    margin-top: 60px;
 }
 
 .banner__collection {
@@ -122,6 +119,7 @@
 .collection__link-text {
     font: 700 1.375em 'Space Mono';
     color: white;
+    line-height: 100%;
 }
 
 .collection__desc {
@@ -141,7 +139,7 @@
 .creators-banner {
     display: grid;
     gap: 30px;
-    padding: 40px 0;
+    padding: 80px 10px;
 }
 
 .creators__title {
@@ -158,7 +156,7 @@
 .creators__button-block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: flex-end;
 }
 
@@ -210,14 +208,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin: 20px 0 0 0;
 }
 
 .creator__username {
     font: 600 1.375em 'Work Sans';
     color: white; 
-    margin: 0 0 5px 0;
 }
 
 .creator__param {
@@ -233,7 +230,7 @@
 /* Categories */
 
 .categories-banner {
-    padding: 50px 0;
+    padding: 80px 10px;
 }
 
 .categories__title {
@@ -278,7 +275,7 @@
 .nfts-banner {
     display: grid;
     gap: 30px;
-    padding: 40px 0;
+    padding: 80px 10px;
 }
 
 .nfts__title {
@@ -295,7 +292,7 @@
 .nfts__button-block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: flex-end;
 }
 
@@ -309,12 +306,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin: 40px 0 0 0;
 }
 
 /* NFT Advert */
 
 .nft-advert-banner {
-    padding: 40vh 0 50px 0;
+    padding: 40vh 10px 60px;
     background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url("../img/nft-background.png");
     background-position: top center;
     background-size: cover;
@@ -328,7 +326,7 @@
 .nft-advert__author {
     border-radius: 50px;
     width: fit-content;
-    padding: 10px 25px;
+    padding: 10px 20px;
     background: #3B3B3B;
 }
 
@@ -344,7 +342,7 @@
 
 .nft-advert__button {
     background: white;
-    padding: 20px 50px;
+    padding: 22px 50px;
 }
 
 .nft-advert__button__text {
@@ -362,7 +360,7 @@
 /* Tips Block */
 
 .tips-banner {
-    padding: 50px 0;
+    padding: 80px 10px;
 }
 
 .tips__title {
@@ -388,7 +386,7 @@
     flex-direction: column;
     align-items: center;
     flex: 0 1 33.3%;
-    gap: 10px;
+    gap: 20px;
     padding: 10px 20px 30px;
     border-radius: 20px;
     background-color: #3B3B3B;
@@ -420,28 +418,30 @@
 /* Widget */
 
 .widget-banner {
-    padding: 50px 0;
+    padding: 40px 10px 80px;
 }
 
 .widget__block {
     padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 80px;
     border-radius: 20px;
     box-sizing: border-box;
     background-color: #3B3B3B;
 }
 
 .widget__img {
-    width: 50%;
+    max-width: 100%;
+    height:100%
 }
 
 .widget__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 15px 0;
 }
 .widget__title {
     font: 600 2.375em 'Work Sans';
@@ -458,23 +458,3 @@
     margin: 20px 0 0 0;
 }
 
-.subsc-form {
-    display: flex;
-}
-
-.subsc-form__input {
-    padding: 16px 49% 16px 16px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: white;
-    font: 400 1em 'Work Sans';
-    color: #2B2B2B;
-    box-sizing: border-box;
-}
-
-.subsc-form__button {
-    width: 48%;
-    padding: 20px 50px;
-    margin-left: -48%;
-    font: 600 1em 'Work Sans';
-}

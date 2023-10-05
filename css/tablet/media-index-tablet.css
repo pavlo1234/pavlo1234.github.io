@@ -20,8 +20,8 @@
         color: white;
     }
 
-    .collections__heading {
-        margin: 0 0 40px 0; 
+    .collections-banner {
+        padding: 40px 10px;
     }
 
     .collections__title {
@@ -31,9 +31,18 @@
     .collections__subtitle {
         font-size: 1em;
     }
+    
+    .collections__list {
+        margin-top: 40px;
+    }
+    
 
     .banner__collection:nth-child(n+3) {
         display: none;
+    }
+
+    .creators-banner {
+        padding: 40px 10px;
     }
 
     .creators__title {
@@ -59,6 +68,8 @@
     }
 
     .creator__info {
+        align-self: stretch;
+        justify-content: space-around;
         align-items: flex-start;
         margin: 0 0 0 20px;
     }
@@ -73,8 +84,16 @@
         max-width: 20%;
     }
 
+    .categories-banner {
+        padding: 40px 10px;
+    }
+
     .categories__title {
         font-size: 1.75em;
+    }
+
+    .nfts-banner {
+        padding: 40px 10px 80px;
     }
 
     .nfts__title {
@@ -85,12 +104,21 @@
         font-size: 1em;
     }
 
+    .tips-banner {
+        padding: 40px 10px;
+    }
+
     .tip__title {
         font-size: 1em;
     }
 
     .tip__text {
         font-size: 0.75em;
+    }
+
+    .widget__block {
+        gap: 30px;
+        padding: 40px;
     }
 
     .widget__title {
@@ -101,20 +129,6 @@
         font-size: 1em;
     }
 
-    .subsc-form {
-        flex-direction: column;
-        gap: 20px;
-        align-items: stretch;
-    }
-
-    .subsc-form__input {
-        padding: 16px;
-    }
-    
-    .subsc-form__button {
-        width: 100%;
-        margin-left: 0;
-    }
     
 
 }

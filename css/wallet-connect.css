@@ -6,14 +6,15 @@
 
 .banner__img {
     width: 55%;
-    max-height: 88vh;
+    max-height: 90vh;
 }
 
 .banner__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 60px 50px;
+    padding: 60px;
+    margin: auto 0;
     gap: 40px
 }
 
@@ -43,6 +44,7 @@
 
 .banner__button-link {
     justify-content: flex-start;
+    border-width: 1px;
     padding: 15px 40px;
     background-color: #3b3b3b;
 }
@@ -71,7 +73,7 @@
     }
 
     .banner__content {
-        padding: 30px 20px;
+        padding: 30px 20px 40px 20px;
         align-items: center;
     }
 

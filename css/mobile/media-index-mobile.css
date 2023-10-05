@@ -1,6 +1,6 @@
 @media screen and (max-width: 475px){
     .banner {
-        flex-direction: column;
+        padding: 40px 10px;
     }
 
     .banner__desc {
@@ -42,6 +42,10 @@
         grid-area: 3 / 1 / 3 / 1;
         align-items: stretch;
     }
+    
+    .nft-advert-banner {
+        padding-bottom: 40px;
+    }
 
     .nft-advert__ntf-title {
         grid-area: 2 / 1 / 2 / 1;
@@ -73,6 +77,10 @@
         padding: 20px;
     }
 
+    .tips-banner {
+        padding: 40px 10px;
+    }
+
     .tip__image {
         width: 35%;
     }
@@ -81,8 +89,12 @@
         text-align: left;
     }
 
+    .widget-banner {
+        padding: 40px 10px;
+    }
+
     .widget__block {
-        flex-direction: column;
+        grid-auto-flow: row;
         background: none;
         padding: 0;
     }

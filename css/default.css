@@ -51,7 +51,7 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     box-sizing: border-box;
     cursor:pointer;
 }
@@ -65,11 +65,13 @@ a {
 .action-button__text {
     font: 600 1em 'Work Sans';
     color: white;
+    line-height: 100%;
 }
 
 .action-button__icon {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 
@@ -89,6 +91,13 @@ a {
 .usercard__username {
     font: 400 1em 'Work Sans';
     color: white;
+    line-height: 100%;
+}
+
+.usercard__avatar {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -171,18 +180,19 @@ a {
 .nft__title {
     font: 600 1.375em 'Work Sans';
     color: white;
-    margin: 0 0 5% 0;
+    margin: 0 0 10px 0;
 }
 
 .nft__details {
     display: flex;
     justify-content: space-between;
-    margin: 10% 0 0 0;
+    margin: 25px 0 0 0;
 }
 
 .nft__detail {
     display: flex;
     flex-direction: column;
+    gap:8px;
 }
 
 .nft__detail_first {
@@ -215,7 +225,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 15px 0;
     cursor: pointer;
 }
@@ -316,4 +326,45 @@ a {
 .timer__button {
     padding: 20px 0;
     margin-top: 20px;
+}
+
+/* Subscription form */
+
+
+.subsc-form {
+    display: flex;
+}
+
+.subsc-form__input {
+    padding: 16px 49% 16px 16px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    font: 400 1em 'Work Sans';
+    color: #2B2B2B;
+    box-sizing: border-box;
+}
+
+.subsc-form__button {
+    width: 48%;
+    padding: 16px 50px;
+    margin-left: -48%;
+    font: 600 1em 'Work Sans';
+}
+
+@media screen and (max-width: 1024px) {
+    .subsc-form {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .subsc-form__input {
+        padding: 16px;
+    }
+    
+    .subsc-form__button {
+        width: 100%;
+        margin-left: 0;
+    }
 }
