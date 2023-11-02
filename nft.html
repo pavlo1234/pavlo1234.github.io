@@ -14,7 +14,15 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/tablet/media-footer-tablet.css">
     <link rel="stylesheet" href="css/mobile/media-footer-mobile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header/header__menu-switch.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/nft-info__timer.js"></script>
+
     <title>NFT</title>
+
+
 </head>
 <body>
 
@@ -24,10 +32,10 @@
             <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
         </a>
         <nav class="header__menu">
-            <a href="marketplace.html" class="menu__link">Marketplace</a>
-            <a href="rankings.html" class="menu__link">Rankings</a>
-            <a href="wallet-connect.html" class="menu__link">Connect a wallet</a>
-            <a href="sign-up.html" class="menu__button action-button action-button_filled">
+            <a href="marketplace.html" class="menu__link animated_resize">Marketplace</a>
+            <a href="rankings.html" class="menu__link animated_resize">Rankings</a>
+            <a href="wallet-connect.html" class="menu__link animated_resize">Connect a wallet</a>
+            <a href="sign-up.html" class="menu__button action-button action-button_filled animated_resize">
                 <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
                 <span class="action-button__text">Sign Up</span>
             </a>
@@ -46,25 +54,25 @@
         </div>
         
         <div class="nft-info__timer-block">
-            <div class="nft-info__timer timer">
+            <div class="nft-info__timer timer" data-time-end="2023-11-10">
                 <h3 class="timer__title">Auction ends in:</h3>
                 <div class="timer__display">
-                    <div class="timer__number">
+                    <!--<div class="timer__number">
                         <span class="timer__digits timer__hours">59</span>
                         <span class="timer__subtext">Hours</span>
                     </div>
                     <span class="timer__filler">:</span>
                     <div class="timer__number">
-                        <span class="timer__digits timer__hours">59</span>
+                        <span class="timer__digits timer__minutes">59</span>
                         <span class="timer__subtext">Minutes</span>
                     </div>
                     <span class="timer__filler">:</span>
                     <div class="timer__number">
-                        <span class="timer__digits timer__hours">59</span>
+                        <span class="timer__digits timer__seconds">59</span>
                         <span class="timer__subtext">Seconds</span>
-                    </div>
+                    </div>-->
                 </div>
-                <a href="#" class="timer__button action-button action-button_filled">
+                <a href="#" class="timer__button action-button action-button_filled animated_resize">
                     <span class="timer__button__text action-button__text">Place Bid</span>
                 </a>
             </div>
@@ -72,7 +80,7 @@
 
         <div class="nft-info__item">
             <h3 class="nft-info__title">Created By</h3>
-            <div class="nft-info__usercard usercard">
+            <div class="nft-info__usercard usercard usercard_animated_moving animated_resize">
                 <img src="img/avatars/avatar1.png" alt="" class="usercard__avatar item__user-avatar">
                 <span class="nft-info__artist-name usercard__username">Animakid</span>
             </div>
@@ -113,10 +121,10 @@
         <div class="nft-info__item">
             <h3 class="nft-info__title">Tags</h3>
             <div class="nft-info__tags">
-                <a href="#" class="nft-info__tag">ANIMATION</a>
-                <a href="#" class="nft-info__tag">ILLUSTRATION</a>
-                <a href="#" class="nft-info__tag">MOON</a>
-                <a href="#" class="nft-info__tag">MOON</a>
+                <a href="#" class="nft-info__tag animated_resize">ANIMATION</a>
+                <a href="#" class="nft-info__tag animated_resize">ILLUSTRATION</a>
+                <a href="#" class="nft-info__tag animated_resize">MOON</a>
+                <a href="#" class="nft-info__tag animated_resize">MOON</a>
             </div>
         </div>
         
@@ -129,13 +137,13 @@
             <div class="works-info__heading__text">
                 <h1 class="works-info__heading__title">More From This Artist</h1>
             </div>
-            <a href="artist.html" class="works-info__heading__button action-button">
+            <a href="artist.html" class="works-info__heading__button action-button animated_resize">
                 <img src="img/icons/ArrowRightPurple.svg" alt="" class="works-info__heading__button__icon action-button__icon">
                 <span class="works-info__heading__button__text action-button__text">Go To Artist Page</span>
             </a>
         </div>
         <div class="works-info__works-list grid-list">
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -155,7 +163,7 @@
                     </div>
                 </div>
             </a>
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -175,7 +183,7 @@
                     </div>
                 </div>
             </a>
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -195,7 +203,7 @@
                     </div>
                 </div>
             </a>
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -215,7 +223,7 @@
                     </div>
                 </div>
             </a>
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -235,7 +243,7 @@
                     </div>
                 </div>
             </a>
-            <a href="nft.html" class="works-info__item nft-card">
+            <a href="nft.html" class="works-info__item nft-card animated_resize">
                 <img src="img/nfts/nft3.png" alt="" class="nft__img">
                 <div class="nft__desc">
                     <h3 class="nft__title">AstroFiction</h3>
@@ -309,7 +317,7 @@
                         <span class="footer__text">Get exclusive promotions & updates straight to your inbox.</span>
                         <form action="" class="footer__subsc-form subsc-form">
                             <input placeholder="Enter your email here" type="email" class="footer__subsc-form__input subsc-form__input"/>
-                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled">
+                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled action-button_animated-rotated-resize">
                                 <img src="img/icons/EnvelopeSimple.svg" alt="" class="form__button__icon action-button__icon">
                                 <span class="action-button__text form__button__text">Subscribe</span>
                             </button>

@@ -73,7 +73,7 @@
 
 .collections__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     flex-wrap: nowrap;
     margin-top: 60px;
@@ -312,7 +312,12 @@
 /* NFT Advert */
 
 .nft-advert-banner {
-    padding: 40vh 10px 60px;
+    display: flex;
+    align-items: flex-end;
+    height: 85vh;
+    min-height: fit-content;
+    padding: 0 10px 60px;
+    box-sizing: border-box;
     background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url("../img/nft-background.png");
     background-position: top center;
     background-size: cover;
@@ -320,6 +325,7 @@
 
 .nft-advert__content {
     display: grid;
+    width: 100%;
     row-gap: 30px;
 }
 
@@ -457,4 +463,3 @@
 .widget__subsc-form {
     margin: 20px 0 0 0;
 }
-

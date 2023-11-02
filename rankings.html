@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/tablet/media-footer-tablet.css">
     <link rel="stylesheet" href="css/mobile/media-footer-mobile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header/header__menu-switch.js"></script>
+    <script src="js/taged-items-nav.js"></script>
+
     <title>Rankings</title>
 </head>
 <body>
@@ -23,10 +28,10 @@
             <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
         </a>
         <nav class="header__menu">
-            <a href="marketplace.html" class="menu__link">Marketplace</a>
-            <a href="rankings.html" class="menu__link">Rankings</a>
-            <a href="wallet-connect.html" class="menu__link">Connect a wallet</a>
-            <a href="sign-up.html" class="menu__button action-button action-button_filled">
+            <a href="marketplace.html" class="menu__link animated_resize">Marketplace</a>
+            <a href="rankings.html" class="menu__link animated_resize">Rankings</a>
+            <a href="wallet-connect.html" class="menu__link animated_resize">Connect a wallet</a>
+            <a href="sign-up.html" class="menu__button action-button action-button_filled animated_resize">
                 <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
                 <span class="action-button__text">Sign Up</span>
             </a>
@@ -44,90 +49,114 @@
             </div>
         </div>
     </div>
-    <div class="filters tabs container">
-        <button class="filter tab filter_active tab_active">
-            <h2 class="tab__title filter__title">Today</h2>
-        </button>
-        <button class="filter tab">
-            <h2 class="tab__title filter__title">This Week</h2>
-        </button>
-        <button class="filter tab">
-            <h2 class="tab__title filter__title">This Month</h2>
-        </button>
-        <button class="filter tab">
-            <h2 class="tab__title filter__title">All Time</h2>
-        </button>
-    </div>
 
-    <table class="ranking-table container">
-        <tr class="ranking-table__headings">
-            <th class="ranking-table__heading">#</th>
-            <th class="ranking-table__heading">Artist</th>
-            <th class="ranking-table__heading ranking-table__heading_change">Change</th>
-            <th class="ranking-table__heading ranking-table__heading_sold">NFTs Sold</th>
-            <th class="ranking-table__heading">Volume</th>
-        </tr>
-        <tr class="ranking-table__item">
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__number">1</div>
-            </td>
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__user-info">
-                    <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
-                    <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
-                </div>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_change">
-                <span class="ranking-table__item__change-value">+1.41%</span>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_sold">
-                <span class="ranking-table__item__sold-value">602</span> 
-            </td>
-            <td class="ranking-table__item__value">
-                <span class="ranking-table__item__volume-value">12.4 ETH</span>
-            </td>
-        </tr>
-        <tr class="ranking-table__item">
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__number">1</div>
-            </td>
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__user-info">
-                    <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
-                    <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
-                </div>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_change">
-                <span class="ranking-table__item__change-value">+1.41%</span>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_sold">
-                <span class="ranking-table__item__sold-value">602</span> 
-            </td>
-            <td class="ranking-table__item__value">
-                <span class="ranking-table__item__volume-value">12.4 ETH</span>
-            </td>
-        </tr>
-        <tr class="ranking-table__item">
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__number">1</div>
-            </td>
-            <td class="ranking-table__item__value">
-                <div class="ranking-table__item__user-info">
-                    <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
-                    <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
-                </div>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_change">
-                <span class="ranking-table__item__change-value">+1.41%</span>
-            </td>
-            <td class="ranking-table__item__value ranking-table__item__value_sold">
-                <span class="ranking-table__item__sold-value">602</span> 
-            </td>
-            <td class="ranking-table__item__value">
-                <span class="ranking-table__item__volume-value">12.4 ETH</span>
-            </td>
-        </tr>
-    </table>
+    <div class="ranking__table-nav items-nav">
+        <div class="filters tabs container">
+            <button class="filter tab filter_active tab_active" data-tag="Today">
+                <h2 class="tab__title filter__title">Today</h2>
+            </button>
+            <button class="filter tab" data-tag="This Week">
+                <h2 class="tab__title filter__title">This Week</h2>
+            </button>
+            <button class="filter tab" data-tag="This Month">
+                <h2 class="tab__title filter__title">This Month</h2>
+            </button>
+            <button class="filter tab"  data-tag="All Time">
+                <h2 class="tab__title filter__title">All Time</h2>
+            </button>
+        </div>
+    
+            <table class="ranking-table page container items">
+                <tr class="ranking-table__headings">
+                    <th class="ranking-table__heading">#</th>
+                    <th class="ranking-table__heading">Artist</th>
+                    <th class="ranking-table__heading ranking-table__heading_change">Change</th>
+                    <th class="ranking-table__heading ranking-table__heading_sold">NFTs Sold</th>
+                    <th class="ranking-table__heading">Volume</th>
+                </tr>
+                <tr class="ranking-table__item item" data-item-tag="Today">
+                    <td class="ranking-table__item__value">
+                        <div class="ranking-table__item__number">1</div>
+                    </td>
+                    <td class="ranking-table__item__value animated_resize">
+                        <a href="artist.html" class="ranking-table__item__user-info">
+                            <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
+                            <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
+                        </a>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_change">
+                        <span class="ranking-table__item__change-value">+1.41%</span>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_sold">
+                        <span class="ranking-table__item__sold-value">602</span> 
+                    </td>
+                    <td class="ranking-table__item__value">
+                        <span class="ranking-table__item__volume-value">12.4 ETH</span>
+                    </td>
+                </tr>
+                <tr class="ranking-table__item item item_hidden" data-item-tag="This Week">
+                    <td class="ranking-table__item__value">
+                        <div class="ranking-table__item__number">2</div>
+                    </td>
+                    <td class="ranking-table__item__value animated_resize">
+                        <a href="artist.html" class="ranking-table__item__user-info">
+                            <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
+                            <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
+                        </a>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_change">
+                        <span class="ranking-table__item__change-value">+1.41%</span>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_sold">
+                        <span class="ranking-table__item__sold-value">602</span> 
+                    </td>
+                    <td class="ranking-table__item__value">
+                        <span class="ranking-table__item__volume-value">12.4 ETH</span>
+                    </td>
+                </tr>
+                <tr class="ranking-table__item item item_hidden" data-item-tag="This Month">
+                    <td class="ranking-table__item__value">
+                        <div class="ranking-table__item__number">3</div>
+                    </td>
+                    <td class="ranking-table__item__value animated_resize">
+                        <a href="artist.html" class="ranking-table__item__user-info">
+                            <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
+                            <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
+                        </a>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_change">
+                        <span class="ranking-table__item__change-value">+1.41%</span>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_sold">
+                        <span class="ranking-table__item__sold-value">602</span> 
+                    </td>
+                    <td class="ranking-table__item__value">
+                        <span class="ranking-table__item__volume-value">12.4 ETH</span>
+                    </td>
+                </tr>
+                <tr class="ranking-table__item item item_hidden" data-item-tag="All Time">
+                    <td class="ranking-table__item__value">
+                        <div class="ranking-table__item__number">4</div>
+                    </td>
+                    <td class="ranking-table__item__value animated_resize">
+                        <a href="artist.html" class="ranking-table__item__user-info">
+                            <img src="img/ranking-avatar.png" alt="" class="ranking-table__item__user-avatar">
+                            <span class="ranking-table__item__username">Jaydon Ekstrom Bothmnan</span> 
+                        </a>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_change">
+                        <span class="ranking-table__item__change-value">+1.41%</span>
+                    </td>
+                    <td class="ranking-table__item__value ranking-table__item__value_sold">
+                        <span class="ranking-table__item__sold-value">602</span> 
+                    </td>
+                    <td class="ranking-table__item__value">
+                        <span class="ranking-table__item__volume-value">12.4 ETH</span>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    
 
     <footer class="footer">
         <div class="container">
@@ -180,7 +209,7 @@
                         <span class="footer__text">Get exclusive promotions & updates straight to your inbox.</span>
                         <form action="" class="footer__subsc-form subsc-form">
                             <input placeholder="Enter your email here" type="email" class="footer__subsc-form__input subsc-form__input"/>
-                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled">
+                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled action-button_animated-rotated-resize">
                                 <img src="img/icons/EnvelopeSimple.svg" alt="" class="form__button__icon action-button__icon">
                                 <span class="action-button__text form__button__text">Subscribe</span>
                             </button>

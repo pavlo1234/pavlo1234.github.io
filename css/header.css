@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
+    position: relative;
 }
 
 .header__menu {
@@ -16,6 +17,7 @@
 
 .menu__link {
     font: 600 1em 'Work Sans';
+    text-align: center;
     color: white;
     line-height: 100%;
     padding: 0 20px;

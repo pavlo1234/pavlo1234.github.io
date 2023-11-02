@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/tablet/media-footer-tablet.css">
     <link rel="stylesheet" href="css/mobile/media-footer-mobile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header/header__menu-switch.js"></script>
+
     <title>Sign Up</title>
 </head>
 <body>
@@ -26,10 +30,10 @@
             <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
         </a>
         <nav class="header__menu">
-            <a href="marketplace.html" class="menu__link">Marketplace</a>
-            <a href="rankings.html" class="menu__link">Rankings</a>
-            <a href="wallet-connect.html" class="menu__link">Connect a wallet</a>
-            <a href="sign-up.html" class="menu__button action-button action-button_filled">
+            <a href="marketplace.html" class="menu__link animated_resize">Marketplace</a>
+            <a href="rankings.html" class="menu__link animated_resize">Rankings</a>
+            <a href="wallet-connect.html" class="menu__link animated_resize">Connect a wallet</a>
+            <a href="sign-up.html" class="menu__button action-button action-button_filled animated_resize">
                 <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
                 <span class="action-button__text">Sign Up</span>
             </a>
@@ -51,21 +55,21 @@
             <form action="" class="banner__reg-form reg-form">
                 <div class="reg-form__input-block">
                     <img src="img/icons/UserGray.svg" alt="" class="reg-form__input-icon">
-                    <input placeholder="Username" type="text" class="reg-form__input">
+                    <input placeholder="Username" type="text" class="reg-form__input" required>
                 </div>
                 <div class="reg-form__input-block">
                     <img src="img/icons/EnvelopeSimpleGray.svg" alt="" class="reg-form__input-icon">
-                    <input placeholder="Email Address" type="email" class="reg-form__input">
+                    <input placeholder="Email Address" type="email" class="reg-form__input" required>
                 </div>
                 <div class="reg-form__input-block">
                     <img src="img/icons/LockKeyGray.svg" alt="" class="reg-form__input-icon">
-                    <input placeholder="Password" type="password" class="reg-form__input">
+                    <input placeholder="Password" type="password" class="reg-form__input" required>
                 </div>
                 <div class="reg-form__input-block">
                     <img src="img/icons/LockKeyGray.svg" alt="" class="reg-form__input-icon">
-                    <input placeholder="Confirm Password" type="password" class="reg-form__input">
+                    <input placeholder="Confirm Password" type="password" class="reg-form__input" required>
                 </div>
-                <button class="reg-form__button action-button action-button_filled">
+                <button class="reg-form__button action-button action-button_filled animated_resize">
                     <span class="action-button__text reg-form__button__text">Create Account</span>
                 </button>
             </form>
@@ -123,7 +127,7 @@
                         <span class="footer__text">Get exclusive promotions & updates straight to your inbox.</span>
                         <form action="" class="footer__subsc-form subsc-form">
                             <input placeholder="Enter your email here" type="email" class="footer__subsc-form__input subsc-form__input"/>
-                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled">
+                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled action-button_animated-rotated-resize">
                                 <img src="img/icons/EnvelopeSimple.svg" alt="" class="form__button__icon action-button__icon">
                                 <span class="action-button__text form__button__text">Subscribe</span>
                             </button>

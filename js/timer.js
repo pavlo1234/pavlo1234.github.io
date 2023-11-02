@@ -22,7 +22,7 @@ function set_timer(date, timer_elem) {
 
         for(let i = 0; i < N; i+=1) {
             let count = Math.trunc(time / coeff[i]);
-            if(count > 0) {
+            if(count >= 0) {
                 let number_cp = $($(display).find(".timer__number[data-units=\""+digits_keys[i]+"\"]"));
                 let filler_cp = $(number_cp).siblings(".timer__filler")[0];
                 

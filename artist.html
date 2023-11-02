@@ -14,7 +14,14 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/tablet/media-footer-tablet.css">
     <link rel="stylesheet" href="css/mobile/media-footer-mobile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header/header__menu-switch.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/taged-items-nav.js"></script>
+
     <title>Artist</title>
+
 </head>
 <body>
 
@@ -24,10 +31,10 @@
             <img src="img/logo-text.svg" alt="NFT Marketplace" class="logo__text">
         </a>
         <nav class="header__menu">
-            <a href="marketplace.html" class="menu__link">Marketplace</a>
-            <a href="rankings.html" class="menu__link">Rankings</a>
-            <a href="wallet-connect.html" class="menu__link">Connect a wallet</a>
-            <a href="sign-up.html" class="menu__button action-button action-button_filled">
+            <a href="marketplace.html" class="menu__link animated_resize">Marketplace</a>
+            <a href="rankings.html" class="menu__link animated_resize">Rankings</a>
+            <a href="wallet-connect.html" class="menu__link animated_resize">Connect a wallet</a>
+            <a href="sign-up.html" class="menu__button action-button action-button_filled animated_resize">
                 <img src="img/icons/User.svg" alt="Sign Up" class="menu__button__icon action-button__icon">
                 <span class="action-button__text">Sign Up</span>
             </a>
@@ -41,16 +48,16 @@
         <img src="img/user-profile-bkgnd.png" alt="" class="profile__img">
         <div class="profile__info container">
             <div class="profile__info-item">
-                <img src="img/user-avatar.png" alt="" class="profile__user-avatar">
+                <img src="img/user-avatar.png" alt="" class="profile__user-avatar animated_resize">
             </div>
             <div class="profile__info-item">
                 <h1 class="profile__username">Animakid</h1>
                 <div class="profile__buttons">
-                    <button class="profile__button action-button action-button_filled">
+                    <button class="profile__button action-button action-button_filled animated_resize">
                         <img src="img/icons/Copy.svg" alt="" class="profile__button__icon action-button__icon">
                         <span class="profile__button__text action-button__text">0xc0E3...B79C</span>
                     </button>
-                    <button class="profile__button action-button">
+                    <button class="profile__button action-button animated_resize">
                         <img src="img/icons/PlusPurple.svg" alt="" class="profile__button__icon action-button__icon">
                         <span class="profile__button__text action-button__text">Follow</span>
                     </button>
@@ -82,19 +89,19 @@
                 <div class="profile__info__block">
                     <h1 class="profile__block__title">Links</h1>
                     <div class="profile__links">
-                        <a href="#" class="profile__link">
+                        <a href="#" class="profile__link animated_resize">
                             <img src="img/icons/GlobeGray.svg" alt="" class="profile__link__icon">
                         </a>
-                        <a href="#" class="profile__link">
+                        <a href="#" class="profile__link animated_resize">
                             <img src="img/icons/DiscordLogo.svg" alt="" class="profile__link__icon">
                         </a>
-                        <a href="#" class="profile__link">
+                        <a href="#" class="profile__link animated_resize">
                             <img src="img/icons/YoutubeLogo.svg" alt="" class="profile__link__icon">
                         </a>
-                        <a href="#" class="profile__link">
+                        <a href="#" class="profile__link animated_resize">
                             <img src="img/icons/TwitterLogo.svg" alt="" class="profile__link__icon">
                         </a>
-                        <a href="#" class="profile__link">
+                        <a href="#" class="profile__link animated_resize">
                             <img src="img/icons/InstagramLogo.svg" alt="" class="profile__link__icon">
                         </a>
                     </div>
@@ -103,145 +110,392 @@
         </div>
     </div>
 
-    <div class="tags tabs container">
-        <button class="tag tab tab_active type_active">
-            <h2 class="type__title tab__title">Created</h2>
-            <div class="tag__count tab__number">302</div>
-        </button>
-        <button class="tag tab">
-            <h2 class="tag__title tab__title">Owned</h2>
-            <div class="tag__count tab__number">67</div>
-        </button>
-        <button class="tag tab">
-            <h2 class="tag__title tab__title">Collection</h2>
-            <div class="tag__count tab__number">4</div>
-        </button>
-    </div>
-    
-    <div class="works-banner">
-        <div class="works__list grid-list container">
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
+    <div class="works__pages-nav items-nav">
+        <div class="tags tabs container">
+            <button class="tag tab tab_active" data-tag="Created">
+                <h2 class="tag__title tab__title">Created</h2>
+                <div class="tag__count tab__number">302</div>
+            </button>
+            <button class="tag tab" data-tag="Owned">
+                <h2 class="tag__title tab__title">Owned</h2>
+                <div class="tag__count tab__number">67</div>
+            </button>
+            <button class="tag tab" data-tag="Collection">
+                <h2 class="tag__title tab__title">Collection</h2>
+                <div class="tag__count tab__number">4</div>
+            </button>
+        </div>
+        
+        <div class="works-banner items">
+            <div class="works__list grid-list container item" data-item-tag="Created">
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction1</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
                         </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
-                        </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
                         </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
-                        </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
                         </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="nft.html" class="works__item nft-card">
-                <img src="img/nfts/nft3.png" alt="" class="nft__img">
-                <div class="nft__desc">
-                    <h3 class="nft__title">AstroFiction</h3>
-                    <div class="nft__author usercard">
-                        <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
-                        <span class="nft__author-name usercard__username">Spaceone</span>
-                    </div>
-                    <div class="nft__details">
-                        <div class="nft__detail nft__detail_first">
-                            <span class="nft__detail__param">Price</span>
-                            <span class="nft__detail__value">1.63 ETH</span>
-                        </div>
-                        <div class="nft__detail nft__detail_last">
-                            <span class="nft__detail__param">Highest Bid</span>
-                            <span class="nft__detail__value">0.33 wETH</span>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="works__list grid-list container item item_hidden" data-item-tag="Owned">
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction2</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="works__list grid-list container item item_hidden" data-item-tag="Collection">
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction3</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="nft.html" class="works__item nft-card animated_resize">
+                    <img src="img/nfts/nft3.png" alt="" class="nft__img">
+                    <div class="nft__desc">
+                        <h3 class="nft__title">AstroFiction</h3>
+                        <div class="nft__author usercard">
+                            <img src="img/avatars/avatar19.png" alt="" class="usercard__avatar nft__author__avatar">
+                            <span class="nft__author-name usercard__username">Spaceone</span>
+                        </div>
+                        <div class="nft__details">
+                            <div class="nft__detail nft__detail_first">
+                                <span class="nft__detail__param">Price</span>
+                                <span class="nft__detail__value">1.63 ETH</span>
+                            </div>
+                            <div class="nft__detail nft__detail_last">
+                                <span class="nft__detail__param">Highest Bid</span>
+                                <span class="nft__detail__value">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
+    
 
     <footer class="footer">
         <div class="container">
@@ -294,7 +548,7 @@
                         <span class="footer__text">Get exclusive promotions & updates straight to your inbox.</span>
                         <form action="" class="footer__subsc-form subsc-form">
                             <input placeholder="Enter your email here" type="email" class="footer__subsc-form__input subsc-form__input"/>
-                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled">
+                            <button class="footer__subsc-form__button subsc-form__button action-button action-button_filled action-button_animated-rotated-resize">
                                 <img src="img/icons/EnvelopeSimple.svg" alt="" class="form__button__icon action-button__icon">
                                 <span class="action-button__text form__button__text">Subscribe</span>
                             </button>

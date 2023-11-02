@@ -25,23 +25,34 @@ a {
 }
 
 .container {
+    width: 100%;
     max-width: 1024px;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
     .container {
-        max-width: 690px;
-        margin: 0 auto;
+        max-width: 790px;
     }
 }
 
 @media screen and (max-width: 425px) {
     .container {
-        max-width: 315px; 
-        margin: 0 auto;
+        max-width: 415px; 
     }
 }
+
+/* General animations */
+
+.animated_resize {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.animated_resize:hover {
+    transform: scale(0.95)
+}
+
 
 /* Buttons */
 
@@ -74,6 +85,13 @@ a {
     display: block;
 }
 
+.action-button_animated-rotated-resize {
+    transform: rotateY(0deg) scale(1);
+    transition: transform 0.3s;
+}
+.action-button_animated-rotated-resize:hover {
+    transform: rotateY(10deg) scale(0.95);
+}
 
 /* User card */
 
@@ -81,6 +99,7 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    cursor:pointer;
 }
 
 .usercard__user-link {
@@ -98,6 +117,15 @@ a {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.usercard_animated_moving {
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: transform 0.3s;
+}
+
+.usercard_animated_moving:hover {
+    transform: translate3d(10%, 0, 0) scale(0.95);
 }
 
 
@@ -147,13 +175,6 @@ a {
     }
     .stat-info__text{
         font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 475px) {
-    .container {
-        max-width: 315px; 
-        margin: 0 auto;
     }
 }
 
@@ -214,7 +235,7 @@ a {
 }
 
 
-/* Tab Widget */
+/* Tabs and Pages Widget */
 
 .tabs {
     display: grid;
@@ -228,10 +249,11 @@ a {
     gap: 15px;
     padding: 15px 0;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .tab_active {
-    border-bottom: 2px solid #858584;
+    box-shadow: 0 2px #858584;
 }
 
 .tab__title {
@@ -259,12 +281,16 @@ a {
     background-color: #858584;
 }
 
+.item_hidden {
+    display: none !important;
+}
+
 /* Item grid */
 
 .grid-list {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 1024px) {
@@ -328,27 +354,36 @@ a {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    .timer__display {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .timer__display {
+        gap: 0;
+    }
+}
+
 /* Subscription form */
 
 
 .subsc-form {
     display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .subsc-form__input {
-    padding: 16px 49% 16px 16px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: white;
+    padding: 16px;
     font: 400 1em 'Work Sans';
     color: #2B2B2B;
-    box-sizing: border-box;
 }
 
 .subsc-form__button {
-    width: 48%;
     padding: 16px 50px;
-    margin-left: -48%;
     font: 600 1em 'Work Sans';
 }
 
@@ -357,14 +392,24 @@ a {
         flex-direction: column;
         gap: 16px;
         align-items: stretch;
+        border-radius: 0;
+        background: none;
     }
 
     .subsc-form__input {
         padding: 16px;
+        border-radius: 20px;
+        background-color: white;
     }
     
     .subsc-form__button {
         width: 100%;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .subsc-form__button:hover {
+        transform: scale(0.95) !important;
     }
 }

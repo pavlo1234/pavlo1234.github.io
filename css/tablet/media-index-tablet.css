@@ -129,6 +129,8 @@
         font-size: 1em;
     }
 
-    
+    .widget__subsc-form__button:hover {
+        transform: scale(0.95) !important;
+    }
 
 }
